@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+class student{
+
+   int age;
+
+public :
+
+    /// Default constructor
+/*
+   student (){
+
+    cout<<"constructor called"<<endl;
+
+   }
+*/
+
+    /// parametersied constructor
+    student(int rollNumber){
+       this->rollNumber = rollNumber; /// mandatory to use this
+        cout<<"constructor 2 called"<<endl;
+
+    }
+    student(int a,int r){
+        cout<<"this"<<this<<endl;
+        cout<<"constructor 3 called"<<endl;
+        this->age = a; /// optional
+        age = a;
+        rollNumber = r;
+    }
+ int rollNumber;
+
+ void display(){
+      cout<<age<<" "<<rollNumber<<endl;
+    }
+
+    int getAge(){
+      return age;
+    }
+    void setAge(int a, int password){
+        if(password !=123){
+            return;
+        }
+        if(a<0){
+            return;
+        }
+        age = a;
+
+     }
+    ~student(){  /// our Destructor will be called
+
+    cout<<"Destructor called"<<endl;
+
+
+
+    }
+
+
+  };

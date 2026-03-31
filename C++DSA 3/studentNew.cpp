@@ -1,0 +1,45 @@
+#include<iostream>
+#include "student.cpp"
+using namespace std;
+
+int main(){
+
+    student s1(10,100);
+    cout<<"Adrress of s1"<<&s1<<endl;
+
+    student s2(20,200);
+    cout<<"Add of s2"<<&s2<<endl;
+/*
+// student s1;
+ //student *s2 = new student;
+
+ //s1.setAge(30,123);
+ //s2->setAge(20,123);
+
+ //s1.display();
+ //s2->display();
+
+ student s1;
+ s1.display();
+
+ student s2;
+ s2.display();
+
+ student *s3 = new student;
+ s3->display();
+
+ cout<<"Parametrised constructor demo"<<endl;
+ student s4(10);
+ s4.display();
+
+ student *s5 = new student(20);
+ s5->display();
+
+ student s6(10,100);
+ s6.display();
+ */
+
+
+ return 0;
+
+}
